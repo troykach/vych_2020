@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		//task_1
+		/*I*/var a = 1;
+		if (a <= 0) {
+			alert('Верно');
+		}
+		else {
+			alert('Неверно');
+		}
+		/*II*/var a = 0;
+		if (a <= 0) {
+			alert('Верно');
+		}
+		else {
+			alert('Неверно');
+		}
+		/*III*/var a = -3;
+		if (a <= 0) {
+			alert('Верно');
+		}
+		else {
+			alert('Неверно');
+		}
+		//task_2
+		/*short_1*/var test = true;
+		if (test == true) {
+			alert('Верно');
+		}
+		else alert('Неверно');
+		/*short_2*/var test = false;
+		if (test == true) {
+			alert('Верно');
+		}
+		else alert('Неверно');
+		/*long_1*/var test = true;
+		if (test == true) {
+			alert('Верно');
+		}
+		else {
+			alert('Неверно');
+		}
+		/*long_2*/var test = false;
+		if (test == true) {
+			alert('Верно');
+		}
+		else {
+			alert('Неверно');
+		}
+		//task_3 a=4, b=2
+		/*I*/var a = 4;
+		if (a > 0 && a < 5) {
+			alert('Верно');
+		}
+		else {
+			alert('Неверно');
+		}
+		/*II*/if (a == 0 || a == 2) {
+			a += 5;
+		}
+		else {
+			a /= 10;
+		}
+		alert(a);
+		/*III*/var a = 4;
+		var b = 2;
+		if (a < 2 && b >2) {
+			alert(a + b);
+		}
+		else {
+			alert(a - b);
+		}
+		/*IV*/if ((a > 2 && a < 11) || (b > 5 && b < 14)) {
+			alert('Верно');
+		}
+		else {
+			alert('Неверно');
+		}
+		//task_4 num=2
+		var num = 2;
+		switch(num) {
+			case 1:
+				var result = 'зима';
+			break;
+			case 2:
+				var result = 'весна';
+			break;
+			case 3:
+				var result = 'лето';
+			break
+			case 4:
+				var result = 'осень';
+			break
+		}
+		alert(result);
+		//task_5
+		var str = '742';
+		var num = parseInt(str);
+		var res = 0, tmp;
+		while(num){
+			tmp = num % 10;
+			num = (num - tmp) / 10;
+			res += tmp;
+		}
+		alert(res);
+	</script>
+</body>
+</html>
