@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		//task_1
+		for (var i = 1; i < 51; i++) {
+			document.write(i + '<br>');
+		}
+		document.write('<br>');
+		//task_2
+		var arr = [1, 2, 3, 4, 5];
+		for (var i = 0; i < arr.length; i++) {
+			document.write(arr[i] + ' ');
+		}
+		document.write('<br>');
+		//task_3
+		var result = 1;
+		var arr = [2, 3, 4, 5];
+		for (var i = 0; i < arr.length; i++) {
+			result *= arr[i];
+		}
+		alert(result);
+		//task_4
+		var obj = {
+			'Минск': 'Беларусь',
+			'Киев': 'Украина',
+			'Москва': 'Россия',
+		};
+		for (var key in obj) {
+			alert(key + ' - это ' + obj[key] + '.');
+		}
+	</script>
+</body>
+</html>
