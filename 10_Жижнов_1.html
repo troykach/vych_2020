@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		//task_1
+		var a = 50;
+		var b = 10;
+		alert(a % b);
+		//task_2
+		var a = 4;
+		var b = 2;
+		if (a % b == 0) {
+			alert('Делится');
+		}
+		else {
+			alert('Делится с остатком ' + a % b);
+		}
+		//task_3
+		var st = Math.pow(5, 16);
+		alert(st);
+		//task_4
+		alert(Math.sqrt(245));
+		//task_5
+		var arr = [4, 2, 5, 19, 13, 0, 10];
+		var sum = 0;
+		for (var i = 0; i < arr.length; i++) {
+			sum += Math.pow(arr[i], 3);
+		}
+		alert(Math.sqrt(sum));
+		//task_6
+		alert(Math.round(Math.sqrt(555)));
+		alert(Math.round(Math.sqrt(555) * 10) / 10);
+		alert(Math.round(Math.sqrt(555) * 100) / 100);
+		//task_7
+		var res = Math.sqrt(111*16);
+		var obj = {'floor': Math.floor(res), 'ceil': Math.ceil(res)};
+		for (var key in obj) {
+			alert(key + ' ' + obj[key]);
+		}
+		//task_8
+		alert(Math.min(4, -2, 5, 19, -130, 0, 10));
+		alert(Math.max(4, -2, 5, 19, -130, 0, 10));
+		//task_9
+		alert(Math.floor(Math.random() * 500));
+		//task_10
+		var arr = [];
+		for (var i = 0; i < 10; i++) {
+			arr[i] = Math.floor(Math.random() * 42);
+		}
+		alert(arr);
+		//task_10
+		/*I*/var a = 4;
+		var b = 2;
+		alert(Math.abs(a - b));
+		/*II*/var a = 2;
+		var b = 4;
+		alert(Math.abs(b - a));
+		//task_11
+		//Если a=b, то задание невыполнимо
+		var a = 4;
+		b = 2;
+		if (a == b) {
+			alert('Придумай сам, как сделать ноль положительным');
+		}
+		else {
+			var c = Math.abs(a - b);
+			alert(c);
+		}
+		//task_12
+		var arr = [12, 15, 20, 25, 59, 79];
+		var sum = 0;
+		for (var i = 0; i < arr.length; i++) {
+			sum += arr[i];
+		}
+		alert(sum / arr.length);
+		//task_13
+		var res = 1;
+		for (i = 1; i < 17; i++) {
+			res *= i;
+		}
+		alert(res);
+	</script>
+</body>
+</html>
