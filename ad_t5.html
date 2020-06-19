@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ul><li id="1">8</li>
+		<li id="2">6</li>
+		<li id="3">4</li>
+		<li id="4">2</li></ul>
+	<input id="but" type="button" value="работать" onclick="toggle();">
+	<script type="text/javascript">
+		function toggle() {
+			var arr = [document.getElementById('1').innerText, document.getElementById('2').innerText, document.getElementById('3').innerText, document.getElementById('4').innerText];
+			arr.sort();
+			document.getElementById('1').innerText = arr[0];
+			document.getElementById('2').innerText = arr[1];
+			document.getElementById('3').innerText = arr[2];
+			document.getElementById('4').innerText = arr[3];
+		}
+	</script>
+</body>
+</html>
