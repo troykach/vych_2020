@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="inp_f" type="text" autofocus>
+	<br>
+	<input id="inp_n_s" type="text" >
+	<input id="inp_n_1" type="text">
+	<input id="inp_n_2" type="text">
+	<script type="text/javascript">
+		inp_f.onblur = function() {
+			var arr = document.getElementById('inp_f').value.split(' ');
+			document.getElementById('inp_n_s').value = arr[0];
+			document.getElementById('inp_n_1').value = arr[1];
+			document.getElementById('inp_n_2').value = arr[2];
+		}
+	</script>
+</body>
+</html>
