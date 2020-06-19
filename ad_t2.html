@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" name="inp" id="inp">
+	<div id="out">0</div>
+</body>
+	<script type="text/javascript">
+		var a, sqr;
+		setInterval(function(){		
+			a = inp.value;
+			sqr = a*a;
+			document.getElementById('out').innerHTML = sqr;
+		}, 1000)
+	</script>
+</html>
