@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function toggle(){
+			var element = document.getElementById('inp');
+
+			if (element.style.display != 'none') {
+				element.style.display = 'none';
+			}
+			else {
+				element.style.display = '';
+			}
+		}
+	</script>
+	<input type="checkbox" onclick="toggle();" checked>
+	<br>
+	<input id="inp" type="text" display="none">
+</body>
+</html>
